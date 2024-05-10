@@ -90,3 +90,15 @@ function copiarEncriptadoTeclado() {
       pegarDesencriptadoTeclado();
     }
   });
+const inputField = document.getElementById('myInput');
+
+inputField.addEventListener('input', function() {
+  this.value = this.value.toLowerCase();
+});
+
+inputField.addEventListener('paste', function(event) {
+  event.preventDefault();
+  const pastedText = event.clipboardData.getData('text');
+  const filteredText = pastedText.toLowerCase().replace(/[^a-z ]/g, '');
+  this.value += filteredText;
+});
