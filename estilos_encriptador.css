@@ -1,0 +1,300 @@
+
+.contenedor{
+    position: absolute;
+    width: 98.6vw;
+    height: 98.6vh;
+}
+
+.imagencontenedor{
+    width: 98.6vw;
+    height: 98.6vh;
+    opacity: 0.45;
+}
+
+.imagenencabezado {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    width: 85px;
+    filter: contrast(500%);
+}
+.titulo-principal{
+    position:absolute;
+    padding-top: 2%;
+    width: 70%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #3c01ff;
+}
+
+.texto{
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border-color: rgb(6, 4, 119);
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 32px;
+    font-family: 'Times New Roman';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #f9f6f600
+}
+.texto::placeholder{
+    color: aliceblue;
+    font-weight: bold;
+    filter: contrast(500%);
+}
+  
+.texto:focus,
+.texto:active{
+    border: none;
+    outline: none;
+}
+.terminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 15%;
+    top: 70%;
+}
+
+.restrincion{
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    font-size: 20px;
+    color: #ffffff;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0%;
+    position:absolute;
+    width: 80%;
+    left: 12%;
+    top: 78%;
+}
+
+.botonEncriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color:rgba(10, 106, 223, 0.313);
+    border-radius: 24px;
+    border: 2px solid rgb(6, 4, 119);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: azure;
+}
+
+.botonDesencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color:rgba(10, 106, 223, 0.293);
+    border: 2px solid rgb(6, 4, 119);
+    border-radius: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: azure;
+}
+.botonDesencriptar:hover,
+.botonEncriptar:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+.Encriptado{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 30%;
+  height: 80%;
+  left: 60%;
+  top: 5%;
+  background: #f7f5f500;
+  border-color: rgb(6, 4, 119);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 32%;
+}
+
+.mensajeencriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensajeencriptado h2{
+    width: 60%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 120%;
+    text-align: center;
+    color: azure;
+}
+
+.mensajeencriptado p {
+    width: 80%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: rgb(47, 47, 47);
+}
+
+.Encriptado img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .copyright {
+    color: #FFFFFF ;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px auto;/* Centra el texto horizontalmente */
+  }
+/*responsive design*/
+
+@media (max-width:57.5em){
+
+.contenedor{
+    display:flex;
+    flex-direction:row;
+}    
+
+.Encriptar{
+    width: 100%;
+}
+
+.texto{
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 5%;
+}
+.terminos{
+    width: 80%;
+    left: 10%;
+    top: 67%;
+}
+.terminos.p{
+   font-size: 16px; 
+}
+.botones{
+    width: 80%;
+    left: 10%;
+    top: 70%;
+}
+.botonEncriptar,.botonDesencriptar {
+    width: 48%;
+    border-radius: 16px;
+}
+.botonEncriptar:hover,.botonDesencriptar:hover {
+    margin: 0.3%;
+    width: 47.5%;
+    padding: 1.8%;
+}
+.Encriptado{
+  width: 80%;
+  height: 15%;
+  left: 10%;
+  top: 80%;
+}
+.mensajeencriptado{
+    width: 100%;
+    top: 5%;
+}
+.Encriptado img{
+    top: 0%;
+    display: none;
+    visibility: inherit;
+}
+
+
+}
+
+/* Estilos predeterminados */
+header.arriba {
+    position: relative; /* Hacer que el encabezado sea posicionable */
+  }
+  
+  header.arriba img.imagenencabezado {
+    /* Estilos para la imagen del encabezado */
+  }
+  
+  header.arriba h1.titulo-principal {
+    /* Estilos para el título del encabezado */
+  }
+  
+  /* Estilos para pantallas más pequeñas (max-width: 57.5em) */
+  @media (max-width: 57.5em) {
+    header.arriba {
+      position: absolute; /* Posicionar el encabezado de forma absoluta */
+      top: 0; /* Colocar el encabezado en la parte superior */
+      left: 0; /* Colocar el encabezado a la izquierda */
+      width: 100%; /* Hacer que el encabezado abarque todo el ancho */
+      background-color: #fff; /* Agregar color de fondo si es necesario */
+    }
+  
+    header.arriba img.imagenencabezado {
+      /* Ajustar estilos de imagen para pantallas más pequeñas */
+    }
+  
+    header.arriba h1.titulo-principal {
+      /* Ajustar estilos de título para pantallas más pequeñas */
+    }
+  }

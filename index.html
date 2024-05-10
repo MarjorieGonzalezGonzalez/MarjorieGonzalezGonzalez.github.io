@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-US-Compatible" content="IE-edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Encriptador-texto</title>
+    <link rel="shortcut icon" href="imagenes/robotlogo.png" >
+    <link rel="stylesheet" href = "reset.css"/>
+    <link rel="stylesheet" href = "estilos_encriptador.css"/>
+</head>
+<header class="arriba">
+    <img src="imagenes/leterm.png" class="imagenencabezado">
+    <h1 class="titulo-principal">Encriptador de texto</h1>
+</header> 
+<body>
+<main>
+    <div class="contenedor"> 
+       
+        <img src="imagenes/digital-binary-data-and-secure-data-concept-free-photo.jpg" class="imagencontenedor">
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="textoo" cols="30" rows="10" placeholder="Ingresa el texto aquí" pattern="^[a-z ]+$" required oninput="validarTexto(this)"></textarea>
+        </div>
+        <div class="terminos">
+           <p class="restrincion">Ingrese solo letras minúsculas y sin acentos.</p> 
+        </div>
+        <div class="botones">
+            <button class="botonEncriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <button class="botonDesencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    <div class="Encriptado">
+        <img src="imagenes/lupa_azul.png" alt="" id="imagencriptar">
+        <div class="mensajeencriptado" id="mensajeencriptado">
+            <h2 id="titulodelmensaje">Ningun mensaje fue encontrado</h2>
+            <p id="parrafousuario">Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+    </div>
+</div>
+</main>
+<script src="encriptador_1.js"></script>
+<footer>
+    <p class="copyright">&copy Challenge curso Alura Latam oracle_Marjorie_González-2024</p>
+</footer>
+</body>
+</html>
